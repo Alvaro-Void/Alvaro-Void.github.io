@@ -1,0 +1,70 @@
+/* Estilos sencillos y claros */
+:root{
+  --bg: #f4fbff;
+  --card: #ffffff;
+  --accent: #2b9edb;
+  --accent-dark: #1f7fb0;
+  --text: #123044;
+  --muted: #586b78;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);}
+
+
+body{
+  background-color: #4734b3;
+}
+
+.container{
+  max-width:760px;
+  margin:6vh auto;
+  padding:28px;
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(18,48,68,0.08);
+  text-align:center;
+}
+
+h1{
+  margin:0 0 12px;
+  font-size:28px;
+  line-height:1.1;
+  outline:none; /* evita el contorno por defecto en algunos navegadores */
+  padding:6px 10px;
+  border-radius:8px;
+}
+
+/* Mostrar un ligero borde cuando el título está en edición */
+h1[contenteditable="true"]:focus{
+  box-shadow: 0 0 0 3px rgba(43,158,219,0.15);
+  border:1px solid rgba(43,158,219,0.18);
+}
+
+/* Información y pistas */
+.info{color:var(--muted);margin:12px 0 18px;}
+.hint{color:var(--muted);font-size:13px;margin-top:18px;}
+
+/* Botones de redirección */
+.links{
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:6px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  transition:transform .08s ease, background .12s ease, box-shadow .12s ease;
+  box-shadow: 0 6px 12px rgba(43,158,219,0.16);
+}
+.btn:hover{ background:var(--accent-dark); transform:translateY(-2px); box-shadow:0 8px 18px rgba(31,127,176,0.18); }
+
+

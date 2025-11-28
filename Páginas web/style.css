@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #a6e3e9, #cbf1f5, #e3fdfd);
+    margin: 0;
+    padding: 0;
+    color: #033e3e;
+}
+
+header {
+    background-color: #028090;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 5px solid #02c39a;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #02c39a;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 40px;
+    line-height: 1.7;
+}
+
+.intro, .caracteristicas, .clasificacion, .enlaces {
+    background-color: #ffffffa8;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #05668d;
+    border-bottom: 2px solid #028090;
+    padding-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    max-width: 90%;
+    height: auto;
+}
+
+.subgrupos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.subgrupo {
+    flex: 1 1 45%;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #05668d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 5px solid #02c39a;
+}
